@@ -13,7 +13,7 @@ describe('a RegisterUser entities', () => {
   });
 
   it('should throw error when payload did not meet data type specification', () => {
-    // Assert
+    // Arrange
     const payload = {
       username: 123,
       fullname: true,

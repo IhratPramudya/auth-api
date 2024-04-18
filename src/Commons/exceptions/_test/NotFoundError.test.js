@@ -1,7 +1,8 @@
 const NotFoundError = require('../NotFoundError');
+const ClientError = require('../ClientError');
 
 describe('NotFoundError', () => {
-  it('should create an error correctly', () => {
+  it('should create error correctly', () => {
     const notFoundError = new NotFoundError('not found!');
 
     expect(notFoundError.message).toEqual('not found!');
